@@ -51,7 +51,7 @@ const Navbar = () => {
               transition={{ duration: 0.3 }}
               className="text-2xl font-display font-bold gradient-text"
             >
-              PG✨
+              BT✨
             </motion.a>
           )}
         </AnimatePresence>

@@ -40,7 +40,7 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
             >
-              <span className="gradient-text text-glow">Pratikshya</span>
+              <span className="gradient-text text-glow">Bhumika</span>
             </motion.h1>
 
             {/* Subtitle */}

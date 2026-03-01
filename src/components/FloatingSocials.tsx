@@ -4,19 +4,19 @@ import { Instagram, Youtube, Facebook, Music } from "lucide-react";
 const socials = [
   {
     icon: Music,
-    href: "https://www.tiktok.com/@pratikshya____11",
+    href: "https://www.tiktok.com/@bhumika08_",
     label: "TikTok",
     hoverColor: "hover:bg-[hsl(340,80%,55%)]",
   },
   {
     icon: Instagram,
-    href: "https://instagram.com/pratikshya__2611",
+    href: "https://instagram.com/bhumikathakuri9",
     label: "Instagram",
     hoverColor: "hover:bg-[hsl(316,80%,55%)]",
   },
   {
     icon: Youtube,
-    href: "https://youtube.com/@pratikshyagurung",
+    href: "#",
     label: "YouTube",
     hoverColor: "hover:bg-[hsl(0,80%,50%)]",
   },
