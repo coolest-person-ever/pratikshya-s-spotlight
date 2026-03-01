@@ -17,11 +17,11 @@ const platforms = [
     name: "Instagram",
     icon: Instagram,
     color: "from-[hsl(316,80%,55%)] to-[hsl(270,60%,50%)]",
-    handle: "@pratikshya.gurung",
+    handle: "@pratikshya__2611",
     followers: "25K+",
     description: "Behind the scenes, reels & aesthetic posts",
     btnText: "Follow on Instagram",
-    href: "#",
+    href: "https://instagram.com/pratikshya__2611",
   },
   {
     name: "YouTube",
@@ -231,7 +231,7 @@ const SocialSection = () => {
               Check out my latest reels, behind-the-scenes, and aesthetic posts ✨
             </p>
             <a
-              href="https://instagram.com/pratikshya.gurung"
+              href="https://instagram.com/pratikshya__2611"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-btn inline-flex items-center gap-2"
