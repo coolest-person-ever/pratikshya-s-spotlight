@@ -37,10 +37,7 @@ const Navbar = () => {
         scrolled ? "glass-card py-3 shadow-lg" : "py-5 bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-between px-4">
-        <a href="#home" className="text-2xl font-display font-bold gradient-text">
-          PG✨
-        </a>
+      <div className="container mx-auto flex items-center justify-end px-4">
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
