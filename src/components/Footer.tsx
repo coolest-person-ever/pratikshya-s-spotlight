@@ -1,9 +1,10 @@
 import { Instagram, Youtube, Facebook, Music, Heart } from "lucide-react";
+import ScrollReveal from "./ScrollReveal";
 
 const Footer = () => {
   const socials = [
-    { icon: Music, href: "#", label: "TikTok" },
-    { icon: Instagram, href: "#", label: "Instagram" },
+    { icon: Music, href: "https://www.tiktok.com/@pratikshya____11", label: "TikTok" },
+    { icon: Instagram, href: "https://instagram.com/pratikshya__2611", label: "Instagram" },
     { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Facebook, href: "#", label: "Facebook" },
   ];
@@ -20,27 +21,29 @@ const Footer = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-primary/10 via-background to-background" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-10">
+        <ScrollReveal direction="up" className="text-center mb-10">
           <h3 className="text-4xl md:text-5xl font-display font-black gradient-text mb-4">
             Pratikshya Gurung
           </h3>
           <p className="text-muted-foreground">Dancer • Creator • Artist • Performer</p>
-        </div>
+        </ScrollReveal>
 
-        <div className="flex justify-center gap-4 mb-8">
+        <ScrollReveal direction="up" delay={0.15} className="flex justify-center gap-4 mb-8">
           {socials.map((s) => (
             <a
               key={s.label}
               href={s.href}
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label={s.label}
               className="w-11 h-11 rounded-full glass-card flex items-center justify-center text-muted-foreground hover:text-primary hover:scale-110 transition-all duration-300"
             >
               <s.icon size={18} />
             </a>
           ))}
-        </div>
+        </ScrollReveal>
 
-        <div className="flex flex-wrap justify-center gap-6 mb-8">
+        <ScrollReveal direction="up" delay={0.3} className="flex flex-wrap justify-center gap-6 mb-8">
           {links.map((l) => (
             <a
               key={l.label}
@@ -50,13 +53,15 @@ const Footer = () => {
               {l.label}
             </a>
           ))}
-        </div>
+        </ScrollReveal>
 
-        <div className="border-t border-border/50 pt-6 text-center">
-          <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-            © 2026 Pratikshya Gurung • Made with <Heart size={12} className="text-primary" />
-          </p>
-        </div>
+        <ScrollReveal direction="up" delay={0.4}>
+          <div className="border-t border-border/50 pt-6 text-center">
+            <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
+              © 2026 Pratikshya Gurung • Made with <Heart size={12} className="text-primary" />
+            </p>
+          </div>
+        </ScrollReveal>
       </div>
     </footer>
   );
