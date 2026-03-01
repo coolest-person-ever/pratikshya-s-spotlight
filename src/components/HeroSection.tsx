@@ -63,6 +63,51 @@ const HeroSection = () => {
         style={{ opacity: overlayOpacity }}
       />
 
+      {/* Floating particles */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {Array.from({ length: 20 }).map((_, i) => {
+          const size = 4 + Math.random() * 12;
+          const left = Math.random() * 100;
+          const top = Math.random() * 100;
+          const duration = 8 + Math.random() * 12;
+          const delay = Math.random() * -20;
+          const shape = i % 3; // 0=circle, 1=diamond, 2=star
+          return (
+            <motion.div
+              key={i}
+              className={`absolute ${shape === 1 ? "rotate-45" : ""}`}
+              style={{
+                width: size,
+                height: size,
+                left: `${left}%`,
+                top: `${top}%`,
+                borderRadius: shape === 0 ? "50%" : shape === 1 ? "2px" : "50%",
+                background:
+                  i % 2 === 0
+                    ? "hsl(var(--glow-pink) / 0.4)"
+                    : "hsl(var(--glow-purple) / 0.35)",
+                boxShadow:
+                  i % 4 === 0
+                    ? "0 0 8px hsl(var(--glow-pink) / 0.6)"
+                    : "none",
+              }}
+              animate={{
+                y: [0, -30 - Math.random() * 40, 0],
+                x: [0, (Math.random() - 0.5) * 30, 0],
+                opacity: [0.2, 0.7, 0.2],
+                scale: shape === 2 ? [1, 1.5, 1] : [1, 1, 1],
+              }}
+              transition={{
+                duration,
+                delay,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+            />
+          );
+        })}
+      </div>
+
       {/* Floating decorative orbs */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary/20 blur-3xl animate-float" />
       <div className="absolute bottom-32 right-16 w-48 h-48 rounded-full bg-secondary/20 blur-3xl animate-float" style={{ animationDelay: "3s" }} />
