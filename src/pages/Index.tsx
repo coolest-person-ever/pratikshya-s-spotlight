@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import SparkCursor from "@/components/SparkCursor";
 import LoadingScreen from "@/components/LoadingScreen";
 import FloatingSocials from "@/components/FloatingSocials";
-
+import BackToTop from "@/components/BackToTop";
 const Index = () => {
   const [loaded, setLoaded] = useState(false);
   const onComplete = useCallback(() => setLoaded(true), []);
@@ -28,6 +28,7 @@ const Index = () => {
       <AchievementsSection />
       <ContactSection />
       <Footer />
+      <BackToTop />
     </div>
   );
 };
