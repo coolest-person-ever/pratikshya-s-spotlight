@@ -125,7 +125,7 @@ const HeroSection = () => {
             <div className="w-full h-full rounded-full overflow-hidden bg-background">
               <img
                 src={profileArt}
-                alt="Pratikshya Gurung"
+                alt="Bhumika Thakuri"
                 className="w-full h-full object-cover"
               />
             </div>
@@ -139,7 +139,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-5xl md:text-8xl font-display font-black gradient-text mb-4 text-glow"
         >
-          {"Pratikshya Gurung".split("").map((char, i) => (
+          {"Bhumika Thakuri".split("").map((char, i) => (
             <motion.span
               key={i}
               initial={{ opacity: 0, y: 20 }}

@@ -10,7 +10,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Message sent! 💌 Pratikshya will get back to you soon.");
+    toast.success("Message sent! 💌 Bhumika will get back to you soon.");
     setForm({ name: "", email: "", message: "" });
   };
 

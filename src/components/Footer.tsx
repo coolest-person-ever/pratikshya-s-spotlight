@@ -3,8 +3,8 @@ import ScrollReveal from "./ScrollReveal";
 
 const Footer = () => {
   const socials = [
-    { icon: Music, href: "https://www.tiktok.com/@pratikshya____11", label: "TikTok" },
-    { icon: Instagram, href: "https://instagram.com/pratikshya__2611", label: "Instagram" },
+    { icon: Music, href: "https://www.tiktok.com/@bhumika08_", label: "TikTok" },
+    { icon: Instagram, href: "https://instagram.com/bhumikathakuri9", label: "Instagram" },
     { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Facebook, href: "#", label: "Facebook" },
   ];
@@ -23,7 +23,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 relative z-10">
         <ScrollReveal direction="up" className="text-center mb-10">
           <h3 className="text-4xl md:text-5xl font-display font-black gradient-text mb-4">
-            Pratikshya Gurung
+            Bhumika Thakuri
           </h3>
           <p className="text-muted-foreground">Dancer • Creator • Artist • Performer</p>
         </ScrollReveal>
@@ -58,7 +58,7 @@ const Footer = () => {
         <ScrollReveal direction="up" delay={0.4}>
           <div className="border-t border-border/50 pt-6 text-center">
             <p className="text-sm text-muted-foreground flex items-center justify-center gap-1">
-              © 2026 Pratikshya Gurung • Made with <Heart size={12} className="text-primary" />
+              © 2026 Bhumika Thakuri • Made with <Heart size={12} className="text-primary" />
             </p>
           </div>
         </ScrollReveal>

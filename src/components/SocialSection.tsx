@@ -7,27 +7,27 @@ const platforms = [
     name: "TikTok",
     icon: Music,
     color: "from-[hsl(340,80%,55%)] to-[hsl(316,80%,55%)]",
-    handle: "@pratikshya____11",
+    handle: "@bhumika08_",
     followers: "50K+",
     description: "Dance covers, trends & creative content",
     btnText: "Follow on TikTok",
-    href: "#",
+    href: "https://www.tiktok.com/@bhumika08_",
   },
   {
     name: "Instagram",
     icon: Instagram,
     color: "from-[hsl(316,80%,55%)] to-[hsl(270,60%,50%)]",
-    handle: "@pratikshya__2611",
+    handle: "@bhumikathakuri9",
     followers: "25K+",
     description: "Behind the scenes, reels & aesthetic posts",
     btnText: "Follow on Instagram",
-    href: "https://instagram.com/pratikshya__2611",
+    href: "https://instagram.com/bhumikathakuri9",
   },
   {
     name: "YouTube",
     icon: Youtube,
     color: "from-[hsl(0,80%,50%)] to-[hsl(316,80%,55%)]",
-    handle: "Pratikshya Gurung",
+    handle: "Bhumika Thakuri",
     followers: "10K+",
     description: "Dance performances, vlogs & music",
     btnText: "Subscribe",
@@ -37,7 +37,7 @@ const platforms = [
     name: "Facebook",
     icon: Facebook,
     color: "from-[hsl(220,70%,50%)] to-[hsl(270,60%,50%)]",
-    handle: "Pratikshya Gurung",
+    handle: "Bhumika Thakuri",
     followers: "15K+",
     description: "Community updates & live sessions",
     btnText: "Follow on Facebook",
@@ -46,9 +46,9 @@ const platforms = [
 ];
 
 const tiktokVideos = [
-  "7610813431175793941",
-  "7611189712421735701",
-  "7611871355096583444",
+  "7564389998343081223",
+  "7484562337186270482",
+  "7417420506300779783",
 ];
 
 const youtubeVideos = [
@@ -153,7 +153,7 @@ const SocialSection = () => {
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://www.tiktok.com/@pratikshya____11"
+              href="https://www.tiktok.com/@bhumika08_"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-btn inline-flex items-center gap-2"
@@ -202,7 +202,7 @@ const SocialSection = () => {
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://youtube.com/@pratikshyagurung"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-btn inline-flex items-center gap-2"
@@ -231,7 +231,7 @@ const SocialSection = () => {
               Check out my latest reels, behind-the-scenes, and aesthetic posts ✨
             </p>
             <a
-              href="https://instagram.com/pratikshya__2611"
+              href="https://instagram.com/bhumikathakuri9"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-btn inline-flex items-center gap-2"
