@@ -15,11 +15,14 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [lightMode, setLightMode] = useState(() => document.documentElement.classList.contains("light"));
+  const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+    const onScrollLogo = () => setShowLogo(window.scrollY > window.innerHeight * 0.8);
+    const handler = () => { onScroll(); onScrollLogo(); };
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
   }, []);
 
   const toggleTheme = () => {
@@ -37,7 +40,21 @@ const Navbar = () => {
         scrolled ? "glass-card py-3 shadow-lg" : "py-5 bg-transparent"
       }`}
     >
-      <div className="container mx-auto flex items-center justify-end px-4">
+      <div className="container mx-auto flex items-center justify-between px-4">
+        <AnimatePresence>
+          {showLogo && (
+            <motion.a
+              href="#home"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
+              transition={{ duration: 0.3 }}
+              className="text-2xl font-display font-bold gradient-text"
+            >
+              PG✨
+            </motion.a>
+          )}
+        </AnimatePresence>
 
         {/* Desktop */}
         <div className="hidden md:flex items-center gap-8">
