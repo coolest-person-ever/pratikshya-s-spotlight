@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { Instagram, Youtube, Facebook, Music } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileArt from "@/assets/profile-art.jpg";
@@ -40,16 +40,28 @@ const HeroSection = () => {
     { icon: Facebook, label: "Facebook", href: "#" },
   ];
 
+  const sectionRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ["start start", "end start"],
+  });
+  const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const overlayOpacity = useTransform(scrollYProgress, [0, 1], [0.5, 0.9]);
+
   return (
     <section
+      ref={sectionRef}
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* BG Image */}
-      <div className="absolute inset-0">
-        <img src={heroBg} alt="" className="w-full h-full object-cover opacity-30" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background" />
-      </div>
+      {/* BG Image with parallax */}
+      <motion.div className="absolute inset-0" style={{ y: bgY }}>
+        <img src={heroBg} alt="" className="w-full h-[130%] object-cover opacity-30" />
+      </motion.div>
+      <motion.div
+        className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/70 to-background"
+        style={{ opacity: overlayOpacity }}
+      />
 
       {/* Floating decorative orbs */}
       <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-primary/20 blur-3xl animate-float" />
