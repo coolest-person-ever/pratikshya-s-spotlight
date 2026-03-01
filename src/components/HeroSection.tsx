@@ -132,14 +132,23 @@ const HeroSection = () => {
           </div>
         </motion.div>
 
-        {/* Name */}
+        {/* Name with typing effect */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-5xl md:text-8xl font-display font-black gradient-text mb-4 text-glow"
         >
-          Pratikshya Gurung
+          {"Pratikshya Gurung".split("").map((char, i) => (
+            <motion.span
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.05, delay: 0.5 + i * 0.06 }}
+            >
+              {char}
+            </motion.span>
+          ))}
         </motion.h1>
 
         {/* Subtitle */}
