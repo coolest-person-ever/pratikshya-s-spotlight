@@ -7,7 +7,7 @@ const platforms = [
     name: "TikTok",
     icon: Music,
     color: "from-[hsl(340,80%,55%)] to-[hsl(316,80%,55%)]",
-    handle: "@pratikshya",
+    handle: "@pratikshya____11",
     followers: "50K+",
     description: "Dance covers, trends & creative content",
     btnText: "Follow on TikTok",
@@ -46,9 +46,9 @@ const platforms = [
 ];
 
 const tiktokVideos = [
-  "7449885658498971922",
-  "7447598050846765346",
-  "7441009037574447378",
+  "7610813431175793941",
+  "7611189712421735701",
+  "7611871355096583444",
 ];
 
 const youtubeVideos = [
@@ -153,7 +153,7 @@ const SocialSection = () => {
           </div>
           <div className="text-center mt-8">
             <a
-              href="https://www.tiktok.com/@pratikshya"
+              href="https://www.tiktok.com/@pratikshya____11"
               target="_blank"
               rel="noopener noreferrer"
               className="glow-btn inline-flex items-center gap-2"
