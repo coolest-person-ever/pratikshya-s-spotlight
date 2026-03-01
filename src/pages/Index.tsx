@@ -9,6 +9,7 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SparkCursor from "@/components/SparkCursor";
 import LoadingScreen from "@/components/LoadingScreen";
+import FloatingSocials from "@/components/FloatingSocials";
 
 const Index = () => {
   const [loaded, setLoaded] = useState(false);
@@ -18,6 +19,7 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {!loaded && <LoadingScreen onComplete={onComplete} />}
       <SparkCursor />
+      <FloatingSocials />
       <Navbar />
       <HeroSection />
       <AboutSection />
