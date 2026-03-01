@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Sun, Moon } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -13,12 +14,19 @@ const navItems = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [lightMode, setLightMode] = useState(() => document.documentElement.classList.contains("light"));
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const toggleTheme = () => {
+    const next = !lightMode;
+    setLightMode(next);
+    document.documentElement.classList.toggle("light", next);
+  };
 
   return (
     <motion.nav
@@ -45,6 +53,13 @@ const Navbar = () => {
               {item.label}
             </a>
           ))}
+          <button
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            className="p-2 rounded-full text-muted-foreground hover:text-primary hover:bg-primary/10 transition-colors duration-300"
+          >
+            {lightMode ? <Moon size={18} /> : <Sun size={18} />}
+          </button>
         </div>
 
         {/* Mobile toggle */}

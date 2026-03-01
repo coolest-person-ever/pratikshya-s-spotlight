@@ -52,6 +52,51 @@
     --glass: 270 25% 12%;
     --glass-border: 270 20% 25%;
   }
+
+  .light {
+    --background: 270 20% 97%;
+    --foreground: 270 30% 10%;
+
+    --card: 270 15% 92%;
+    --card-foreground: 270 30% 10%;
+
+    --popover: 270 15% 92%;
+    --popover-foreground: 270 30% 10%;
+
+    --primary: 316 80% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 60% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 270 15% 88%;
+    --muted-foreground: 270 10% 40%;
+
+    --accent: 280 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 15% 85%;
+    --input: 270 15% 85%;
+    --ring: 316 80% 50%;
+
+    --sidebar-background: 270 15% 94%;
+    --sidebar-foreground: 270 30% 10%;
+    --sidebar-primary: 316 80% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 15% 88%;
+    --sidebar-accent-foreground: 270 30% 10%;
+    --sidebar-border: 270 15% 85%;
+    --sidebar-ring: 316 80% 50%;
+
+    --glow-pink: 316 80% 50%;
+    --glow-purple: 270 60% 55%;
+    --neon-pink: 316 100% 60%;
+    --glass: 270 15% 92%;
+    --glass-border: 270 15% 82%;
+  }
 }
 
 @layer base {
