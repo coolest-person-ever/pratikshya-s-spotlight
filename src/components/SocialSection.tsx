@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import { Instagram, Youtube, Facebook, Music } from "lucide-react";
+import { Instagram, Youtube, Facebook, Music, ExternalLink } from "lucide-react";
 
 const platforms = [
   {
@@ -45,6 +45,18 @@ const platforms = [
   },
 ];
 
+const tiktokVideos = [
+  "7449885658498971922",
+  "7447598050846765346",
+  "7441009037574447378",
+];
+
+const youtubeVideos = [
+  "dQw4w9WgXcQ",
+  "kJQP7kiw5Fk",
+  "RgKAFK5djSk",
+];
+
 const SocialSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
@@ -67,7 +79,8 @@ const SocialSection = () => {
           <p className="text-muted-foreground text-lg">Follow the journey across platforms 🌟</p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        {/* Platform Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-20">
           {platforms.map((p, i) => (
             <motion.a
               key={p.name}
@@ -101,6 +114,134 @@ const SocialSection = () => {
             </motion.a>
           ))}
         </div>
+
+        {/* TikTok Embeds */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          className="mb-20"
+        >
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <Music className="text-primary" size={28} />
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground text-glow">
+              My TikTok
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {tiktokVideos.map((id, i) => (
+              <motion.div
+                key={id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.4 + i * 0.1 }}
+                whileHover={{ y: -5 }}
+                className="glass-card overflow-hidden group"
+              >
+                <div className="relative w-full" style={{ minHeight: 580 }}>
+                  <iframe
+                    src={`https://www.tiktok.com/embed/v2/${id}`}
+                    className="w-full h-full absolute inset-0"
+                    style={{ minHeight: 580 }}
+                    allowFullScreen
+                    allow="encrypted-media"
+                    title={`TikTok video ${i + 1}`}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://www.tiktok.com/@pratikshya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-btn inline-flex items-center gap-2"
+            >
+              <Music size={18} />
+              Follow on TikTok
+              <ExternalLink size={14} />
+            </a>
+          </div>
+        </motion.div>
+
+        {/* YouTube Embeds */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.5 }}
+          className="mb-20"
+        >
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <Youtube className="text-primary" size={28} />
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground text-glow">
+              My YouTube
+            </h3>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {youtubeVideos.map((id, i) => (
+              <motion.div
+                key={id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={inView ? { opacity: 1, scale: 1 } : {}}
+                transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
+                whileHover={{ y: -5 }}
+                className="glass-card overflow-hidden rounded-2xl group"
+              >
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${id}`}
+                    className="w-full h-full absolute inset-0 rounded-t-2xl"
+                    allowFullScreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    title={`YouTube video ${i + 1}`}
+                  />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="https://youtube.com/@pratikshyagurung"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-btn inline-flex items-center gap-2"
+            >
+              <Youtube size={18} />
+              Subscribe on YouTube
+              <ExternalLink size={14} />
+            </a>
+          </div>
+        </motion.div>
+
+        {/* Instagram Embed */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.7, delay: 0.7 }}
+        >
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <Instagram className="text-primary" size={28} />
+            <h3 className="text-3xl md:text-4xl font-display font-bold text-foreground text-glow">
+              My Instagram
+            </h3>
+          </div>
+          <div className="max-w-2xl mx-auto glass-card p-8 text-center">
+            <p className="text-muted-foreground mb-6 text-lg">
+              Check out my latest reels, behind-the-scenes, and aesthetic posts ✨
+            </p>
+            <a
+              href="https://instagram.com/pratikshya.gurung"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="glow-btn inline-flex items-center gap-2"
+            >
+              <Instagram size={18} />
+              Follow on Instagram
+              <ExternalLink size={14} />
+            </a>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
