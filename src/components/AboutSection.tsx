@@ -11,10 +11,10 @@ const skills = [
 ];
 
 const timeline = [
-  { year: "2016", title: "Started Dancing", desc: "Began her dance journey with classical and contemporary styles" },
+  { year: "2016", title: "Started Learning Analytics", desc: "Began exploring data visualization and business intelligence tools" },
   { year: "2020", title: "Social Media Growth", desc: "Started creating content on TikTok and Instagram" },
-  { year: "2023", title: "Competitions & Awards", desc: "Won multiple dance competitions and art showcases" },
-  { year: "2026", title: "Creative Journey", desc: "Building her brand as a multi-talented Gen Z creator" },
+  { year: "2023", title: "Power BI Expertise", desc: "Built dashboards and reports for data-driven decision making" },
+  { year: "2026", title: "Creative Journey", desc: "Building her brand as a multi-talented Gen Z creator and analyst" },
 ];
 
 const AboutSection = () => {
