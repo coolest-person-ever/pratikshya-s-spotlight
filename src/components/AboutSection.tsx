@@ -3,18 +3,18 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  { emoji: "💃", label: "Dance" },
+  { emoji: "📊", label: "Power BI" },
   { emoji: "🎤", label: "Singing" },
   { emoji: "🎨", label: "Painting" },
   { emoji: "📱", label: "Content Creation" },
-  { emoji: "🎭", label: "Performing" },
+  { emoji: "📈", label: "Data Analysis" },
 ];
 
 const timeline = [
-  { year: "2016", title: "Started Dancing", desc: "Began her dance journey with classical and contemporary styles" },
+  { year: "2016", title: "Started Learning Analytics", desc: "Began exploring data visualization and business intelligence tools" },
   { year: "2020", title: "Social Media Growth", desc: "Started creating content on TikTok and Instagram" },
-  { year: "2023", title: "Competitions & Awards", desc: "Won multiple dance competitions and art showcases" },
-  { year: "2026", title: "Creative Journey", desc: "Building her brand as a multi-talented Gen Z creator" },
+  { year: "2023", title: "Power BI Expertise", desc: "Built dashboards and reports for data-driven decision making" },
+  { year: "2026", title: "Creative Journey", desc: "Building her brand as a multi-talented Gen Z creator and analyst" },
 ];
 
 const AboutSection = () => {
@@ -32,8 +32,8 @@ const AboutSection = () => {
         >
           <h2 className="text-4xl md:text-6xl font-display font-black gradient-text mb-4">About Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I'm Bhumika — a dancer, singer, painter, and digital creator from Nepal.
-            I express myself through movement, color, and content. Every day is a canvas. ✨
+            I'm Bhumika — a Power BI analyst, singer, painter, and digital creator from Nepal.
+            I express myself through data, color, and content. Every day is a canvas. ✨
           </p>
         </motion.div>
 
