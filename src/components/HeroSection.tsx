@@ -4,7 +4,7 @@ import { Instagram, Youtube, Facebook, Music } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileArt from "@/assets/profile-art.jpg";
 
-const roles = ["Power BI", "Data Analysis", "Painting", "Creating", "Singing"];
+const roles = ["Power BI", "Data Analysis", "Painting", "Creating"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -158,7 +158,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg md:text-xl text-muted-foreground mb-2 tracking-widest uppercase font-light"
         >
-          Power BI Analyst • Creator • Artist • Singer
+          Power BI Analyst • Creator • Artist
         </motion.p>
 
         {/* Typing animation */}
