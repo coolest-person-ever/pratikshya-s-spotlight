@@ -179,8 +179,9 @@ const HeroSection = () => {
           transition={{ delay: 1 }}
           className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
         >
-          <a href="#gallery" className="glow-btn text-lg">
-            ▶ Watch My Videos
+          <a href="#projects" className="glow-btn text-lg">
+            📊 See My Projects
+          </a>
           </a>
           <a href="#socials" className="glow-btn-outline text-lg">
             ✨ Follow My Journey
