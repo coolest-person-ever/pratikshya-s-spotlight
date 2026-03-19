@@ -182,7 +182,6 @@ const HeroSection = () => {
           <a href="#projects" className="glow-btn text-lg">
             📊 See My Projects
           </a>
-          </a>
           <a href="#socials" className="glow-btn-outline text-lg">
             ✨ Follow My Journey
           </a>
