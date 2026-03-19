@@ -4,7 +4,7 @@ import { Instagram, Youtube, Facebook, Music } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import profileArt from "@/assets/profile-art.jpg";
 
-const roles = ["Dancing", "Singing", "Painting", "Creating", "Performing"];
+const roles = ["Power BI", "Data Analysis", "Painting", "Creating", "Singing"];
 
 const HeroSection = () => {
   const [roleIndex, setRoleIndex] = useState(0);
