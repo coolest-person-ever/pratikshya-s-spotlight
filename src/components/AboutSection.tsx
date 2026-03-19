@@ -3,11 +3,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 const skills = [
-  { emoji: "💃", label: "Dance" },
+  { emoji: "📊", label: "Power BI" },
   { emoji: "🎤", label: "Singing" },
   { emoji: "🎨", label: "Painting" },
   { emoji: "📱", label: "Content Creation" },
-  { emoji: "🎭", label: "Performing" },
+  { emoji: "📈", label: "Data Analysis" },
 ];
 
 const timeline = [
