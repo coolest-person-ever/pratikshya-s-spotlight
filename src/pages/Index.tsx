@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
+import ProjectsSection from "@/components/ProjectsSection";
 import GallerySection from "@/components/GallerySection";
 import SocialSection from "@/components/SocialSection";
 import AchievementsSection from "@/components/AchievementsSection";
@@ -23,6 +24,7 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <AboutSection />
+      <ProjectsSection />
       <GallerySection />
       <SocialSection />
       <AchievementsSection />
