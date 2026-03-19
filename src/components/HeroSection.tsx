@@ -158,7 +158,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.5 }}
           className="text-lg md:text-xl text-muted-foreground mb-2 tracking-widest uppercase font-light"
         >
-          Dancer • Creator • Artist • Performer
+          Power BI Analyst • Creator • Artist • Singer
         </motion.p>
 
         {/* Typing animation */}

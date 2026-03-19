@@ -25,7 +25,7 @@ const Footer = () => {
           <h3 className="text-4xl md:text-5xl font-display font-black gradient-text mb-4">
             Bhumika Thakuri
           </h3>
-          <p className="text-muted-foreground">Dancer • Creator • Artist • Performer</p>
+          <p className="text-muted-foreground">Power BI Analyst • Creator • Artist • Singer</p>
         </ScrollReveal>
 
         <ScrollReveal direction="up" delay={0.15} className="flex justify-center gap-4 mb-8">

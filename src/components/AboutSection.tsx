@@ -32,8 +32,8 @@ const AboutSection = () => {
         >
           <h2 className="text-4xl md:text-6xl font-display font-black gradient-text mb-4">About Me</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            I'm Bhumika — a dancer, singer, painter, and digital creator from Nepal.
-            I express myself through movement, color, and content. Every day is a canvas. ✨
+            I'm Bhumika — a Power BI analyst, singer, painter, and digital creator from Nepal.
+            I express myself through data, color, and content. Every day is a canvas. ✨
           </p>
         </motion.div>
 
