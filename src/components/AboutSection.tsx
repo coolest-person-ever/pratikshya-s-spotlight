@@ -4,7 +4,7 @@ import { useRef } from "react";
 
 const skills = [
   { emoji: "📊", label: "Power BI" },
-  { emoji: "🎤", label: "Singing" },
+  { emoji: "🎨", label: "Painting" },
   { emoji: "🎨", label: "Painting" },
   { emoji: "📱", label: "Content Creation" },
   { emoji: "📈", label: "Data Analysis" },
